@@ -50,7 +50,7 @@ dyjsbstep = type=http-request,pattern=^https://(aweme-\w+|aweme).snssdk.com/luck
 
 */
 const jsname='抖音极速版'
-const $ = Env(jsname)
+const $ = new Env('抖音极速版签到');
 const notify = $.isNode() ?require('./sendNotify') : '';
 const signheaderArr = [],signcookieArr=[]
 const stepheaderArr = [],stepkeyArr=[]
